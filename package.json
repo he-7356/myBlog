@@ -2,7 +2,7 @@
     "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-"deploy":"GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
+    "deploy":"bash deploy.sh"
   },
     "devDependencies": {
         "vuepress": "^1.5.1"
