@@ -6,13 +6,18 @@ module.exports = {
 ],
   description: 'Vuepress blog demo',
  themeConfig: {
+      // theme: 'reco',//初始化主题
+      logo: '/logo.jpg',
+
         // 你的GitHub仓库，请正确填写
         repo: 'https://github.com/he-7356/myBlog.git',
         // 自定义仓库链接文字。
         repoLabel: 'My GitHub',
         nav: [
-            { text: 'Home', link: '/' },
-              { text: '博文',
+          { text: "首页", link: "/" },
+          { text: "指南", link: "/guide/" },
+
+          { text: '博文',
               items: [
                 { text: 'FirstBlog', link: '/blog/FirstBlog.md' },
                 { text: 'vue', link: '/blog/vue/vue.md' },
@@ -28,6 +33,7 @@ sidebar: [
       {
         title: 'vue',
         collapsable: true,
+
         children: [
           { title: 'vue的基础概念', path:'/blog/vue/vue.md'},
           { title: '遇见面试 Vuex原理解析', path:'/blog/vue/vue1.md'},
@@ -36,11 +42,13 @@ sidebar: [
 
       },
       {
-        title:"我的web博客",
+        title:"web知识",
         collapsable:true,
         children:[
       { title: '跨域问题', path:'/blog/web/web.md'},
       { title: 'promise的原理', path:'/blog/web/web1.md'},
+      { title: 'AJAX工作原理及其优缺点', path:'/blog/web/web2.md'},
+
     ]
       } ,    
        {
@@ -48,6 +56,8 @@ sidebar: [
         collapsable:true,
         children:[
       { title: 'git基本介绍', path:'/blog/git/git.md'},
+      { title: 'git的常用命令', path:'/blog/git/git3.md'},
+
       { title: 'git与SVN的区别', path:'/blog/git/git1.md'},
     ]
       }
@@ -62,6 +72,7 @@ sidebar: [
     lastUpdated: 'Last Updated',
     serviceWorker: true,
     displayAllHeaders: true, // 默认值：false
+    sidebarDepth:5,
 
 
 

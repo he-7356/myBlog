@@ -1,5 +1,6 @@
 # 我的第一篇博客
-my First Blog
+<p style={{}}>my First Blog</p>
+
 怎么把使用vuepress搭建的博客部署到Github Pages
 推荐在这里阅读效果更佳
 

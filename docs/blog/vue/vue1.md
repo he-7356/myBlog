@@ -1,5 +1,6 @@
-#vue1.md
-遇见面试 Vuex原理解析
+
+
+## 遇见面试 Vuex原理解析
 流程：
 　1.在vue组件里面，通过dispatch来触发actions提交修改数据的操作。
 　　2.然后再通过actions的commit来触发mutations来修改数据。
