@@ -25,14 +25,44 @@ module.exports = {
 sidebar: [
       ['/', '首页'],
       ['/blog/FirstBlog.md', '我的第一篇博客'],
-      ['/blog/vue/vue.md', '我的vue博客'],
-      ['/blog/web/web.md', '我的web博客'],
+      {
+        title: 'vue',
+        collapsable: true,
+        children: [
+          { title: 'vue的基础概念', path:'/blog/vue/vue.md'},
+          { title: '遇见面试 Vuex原理解析', path:'/blog/vue/vue1.md'},
+
+        ]
+
+      },
+      {
+        title:"我的web博客",
+        collapsable:true,
+        children:[
+      { title: '跨域问题', path:'/blog/web/web.md'},
+      { title: 'promise的原理', path:'/blog/web/web1.md'},
+    ]
+      } ,    
+       {
+        title:"git使用技巧",
+        collapsable:true,
+        children:[
+      { title: 'git基本介绍', path:'/blog/git/git.md'},
+      { title: 'git与SVN的区别', path:'/blog/git/git1.md'},
+    ]
+      }
 
     ]
+
+  
+  
+  
+
     },
     lastUpdated: 'Last Updated',
     serviceWorker: true,
- 
+    displayAllHeaders: true, // 默认值：false
+
 
 
 
