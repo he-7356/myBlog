@@ -15,7 +15,7 @@ module.exports = {
               { text: '博文',
               items: [
                 { text: 'FirstBlog', link: '/blog/FirstBlog.md' },
-                { text: 'ios', link: '/blog/vue/vue.md' },
+                { text: 'vue', link: '/blog/vue/vue.md' },
                 { text: 'Web', link: '/blog/web/web.md' }
               ] 
             },
