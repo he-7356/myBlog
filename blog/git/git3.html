@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git常用命令 | 个人主页</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/myBlog/vue-logo.png">
+    <meta name="description" content="Vuepress blog demo">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.3f690941.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.2a5cbbdb.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.8bcff465.js" as="script"><link rel="preload" href="/myBlog/assets/js/12.553b59a0.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.21d79144.js"><link rel="prefetch" href="/myBlog/assets/js/11.65e622f8.js"><link rel="prefetch" href="/myBlog/assets/js/13.435428af.js"><link rel="prefetch" href="/myBlog/assets/js/14.d5eca847.js"><link rel="prefetch" href="/myBlog/assets/js/15.0ce79cb7.js"><link rel="prefetch" href="/myBlog/assets/js/16.96198073.js"><link rel="prefetch" href="/myBlog/assets/js/17.a5ceb6dd.js"><link rel="prefetch" href="/myBlog/assets/js/18.9c3228d8.js"><link rel="prefetch" href="/myBlog/assets/js/19.8847a79e.js"><link rel="prefetch" href="/myBlog/assets/js/3.e5433b27.js"><link rel="prefetch" href="/myBlog/assets/js/4.c0a68fce.js"><link rel="prefetch" href="/myBlog/assets/js/5.a52e17ce.js"><link rel="prefetch" href="/myBlog/assets/js/6.5d910344.js"><link rel="prefetch" href="/myBlog/assets/js/7.4e62059e.js"><link rel="prefetch" href="/myBlog/assets/js/8.86662d99.js"><link rel="prefetch" href="/myBlog/assets/js/9.8bb16e7d.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.3f690941.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><img src="/myBlog/logo.jpg" alt="个人主页" class="logo"> <span class="site-name can-hide">个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/blog/FirstBlog.html" class="nav-link">
+  FirstBlog
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/vue/vue.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/web/web.html" class="nav-link">
+  Web
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/react/react1.html" class="nav-link">
+  React
+</a></li></ul></div></div> <a href="https://github.com/he-7356/myBlog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    My GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/blog/FirstBlog.html" class="nav-link">
+  FirstBlog
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/vue/vue.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/web/web.html" class="nav-link">
+  Web
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/react/react1.html" class="nav-link">
+  React
+</a></li></ul></div></div> <a href="https://github.com/he-7356/myBlog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    My GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/myBlog/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/myBlog/blog/FirstBlog.html" class="sidebar-link">我的第一篇博客</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>git使用技巧</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myBlog/blog/git/git.html" class="sidebar-link">git基本介绍</a></li><li><a href="/myBlog/blog/git/git3.html" aria-current="page" class="active sidebar-link">git的常用命令</a></li><li><a href="/myBlog/blog/git/git1.html" class="sidebar-link">git与SVN的区别</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react随笔</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><Boxx></Boxx> <p></p><div class="table-of-contents"><ul></ul></div><p></p> <h2>git常用指令</h2> <p>1、git显示全部分支</p> <p>git branch //显示本地分支
+git branch -a //显示远程分支
+2、git创建分支</p> <p>git branch 分支名
+3、切换分支</p> <p>git checkout 分支名
+git checkout -b 分支名 若分支不存在，则创建它
+4、删除分支</p> <p>git branch -d 分支名
+-d 当分支已经合并到主干后删除
+-D无论如何都删除分支
+5、合并分支</p> <p>git merge 分支名
+6、撤销前一次commit</p> <p>git revert HEAD
+7、撤销所有本地修改</p> <p>git reset --hard</p> <p>8、撤销所有本地到上一次修改</p> <p>git reset --hard HEAD^</p> <p>9、撤销上一次commit，将commit的文件撤回暂存区</p> <p>git reset --soft HEAD^</p> <p>要是想撤销到上上次，就是HEAD^^ ,以此类推。</p> <p>git revert 是撤销某次操作，此次操作之前的commit都会被保留</p> <p>git reset 是撤销某次提交，但是此次之后的修改都会被退回到暂存区</p> <p>10、将此次更新文件并入到上次commit的记录中，不新添加commit</p> <p>git commit -amend
+二、git进阶
+1、git tag</p> <p>可以将某个具体的版本打上一个标签，这样你就不需要记忆复杂的版本号哈希值了，
+例如你可以使用
+'git tag revert_version bbaf6fb5060b4875b18ff9ff637ce118256d6f20'
+来标记这个被你还原的版本，那么以后你想查看该版本时，
+就可以使用 revert_version标签名，而不是哈希值了</p> <p>2、git stash</p> <p>把所有本地修改都放到暂存区
+3、git stash pop</p> <p>把git stash放到暂存区的代码拿出来
+tips：</p> <p>使用git stash保存当前的工作现场，
+那么就可以切换到其他分支进行工作，或者在当前分支上完成其他紧急的工作，
+比如修订一个bug测试提交。
+如果一个使用了一个</p> <p>git stash，</p> <p>切换到一个分支，
+且在该分支上的工作未完成也需要保存它的工作现场。再使用gitstash。那么stash 队列中就有了两个工作现场。
+可以使用</p> <p>git stash list。  查看stash队列。</p> <p>如果在一个分支上想要恢复某一个工作现场怎么办：
+先用</p> <p>git stashlist
+查看stash队列</p> <p>。确定要恢复哪个工作现场到当前分支。
+然后用</p> <p>git stash pop stash@{num}。num就是你要恢复的工作现场的编号。
+如果想要清空stash队列则使用
+git stash clear。</p> <p>同时注意使用git stashpop命令是恢复
+stash队列中的stash@{0}即最上层的那个工作现场。
+而且使用pop命令恢复的工作现场，其对应的stash在队列中删除。
+使用git stash apply stash@{num}方法</p> <p>除了不在stash队列删除外其他和git stashpop 完全一样。
+常见问题：
+1、提交合并失败
+查看源文件
+这里写图片描述</p> <p>git迷惑之处在于它不知道是把hello world这行放在前面还是把报时功能这段放在前面。
+修改冲突
+这里写图片描述</p> <p>重新提交
+git commit -am &quot;xxx&quot;</p> <p>2、解决gerrit冲突
+解决远程冲突：
+cd demo以分支为develop为例打开Gerrit有冲突的那个网址，如 http://192.168.1.33:8080/#/c/16/ 找到Download 如下命令，执行
+git fetch ssh://minggui.li@192.168.1.33:29418/demo refs/changes/16/16/1 &amp;&amp; git checkout FETCH_HEADgit checkout -b new_branch_namegit fetch origingit rebase origin/develop
+修改冲突文件
+git add .git rebase --continuegit push origin new_branch_name:refs/for/developgit checkout developgit branch -D new_branch_name不会产生新的changes记录，</p> <p>将原changes记录重新review提交即可，</p> <p>这时在原冲突机器上直接pull会本地冲突，</p> <p>需要git reset --hard HEAD^
+否则会出现
+cannot do a partial commit during a merge.最后更新下代码git pu</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/blog/git/git.html" class="prev">
+        git基本介绍
+      </a></span> <span class="next"><a href="/myBlog/blog/git/git1.html">
+        git与SVN的区别
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.2a5cbbdb.js" defer></script><script src="/myBlog/assets/js/2.8bcff465.js" defer></script><script src="/myBlog/assets/js/12.553b59a0.js" defer></script>
+  </body>
+</html>

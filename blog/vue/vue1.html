@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>遇见面试 Vuex原理解析 | 个人主页</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/myBlog/vue-logo.png">
+    <meta name="description" content="Vuepress blog demo">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.3f690941.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.2a5cbbdb.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.8bcff465.js" as="script"><link rel="preload" href="/myBlog/assets/js/15.0ce79cb7.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.21d79144.js"><link rel="prefetch" href="/myBlog/assets/js/11.65e622f8.js"><link rel="prefetch" href="/myBlog/assets/js/12.553b59a0.js"><link rel="prefetch" href="/myBlog/assets/js/13.435428af.js"><link rel="prefetch" href="/myBlog/assets/js/14.d5eca847.js"><link rel="prefetch" href="/myBlog/assets/js/16.96198073.js"><link rel="prefetch" href="/myBlog/assets/js/17.a5ceb6dd.js"><link rel="prefetch" href="/myBlog/assets/js/18.9c3228d8.js"><link rel="prefetch" href="/myBlog/assets/js/19.8847a79e.js"><link rel="prefetch" href="/myBlog/assets/js/3.e5433b27.js"><link rel="prefetch" href="/myBlog/assets/js/4.c0a68fce.js"><link rel="prefetch" href="/myBlog/assets/js/5.a52e17ce.js"><link rel="prefetch" href="/myBlog/assets/js/6.5d910344.js"><link rel="prefetch" href="/myBlog/assets/js/7.4e62059e.js"><link rel="prefetch" href="/myBlog/assets/js/8.86662d99.js"><link rel="prefetch" href="/myBlog/assets/js/9.8bb16e7d.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.3f690941.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><img src="/myBlog/logo.jpg" alt="个人主页" class="logo"> <span class="site-name can-hide">个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/blog/FirstBlog.html" class="nav-link">
+  FirstBlog
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/vue/vue.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/web/web.html" class="nav-link">
+  Web
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/react/react1.html" class="nav-link">
+  React
+</a></li></ul></div></div> <a href="https://github.com/he-7356/myBlog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    My GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow down"></span></button> <button type="button" aria-label="博文" class="mobile-dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myBlog/blog/FirstBlog.html" class="nav-link">
+  FirstBlog
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/vue/vue.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/web/web.html" class="nav-link">
+  Web
+</a></li><li class="dropdown-item"><!----> <a href="/myBlog/blog/react/react1.html" class="nav-link">
+  React
+</a></li></ul></div></div> <a href="https://github.com/he-7356/myBlog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    My GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/myBlog/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/myBlog/blog/FirstBlog.html" class="sidebar-link">我的第一篇博客</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myBlog/blog/vue/vue.html" class="sidebar-link">vue的基础概念</a></li><li><a href="/myBlog/blog/vue/vue1.html" aria-current="page" class="active sidebar-link">遇见面试 Vuex原理解析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/blog/vue/vue1.html#遇见面试-vuex原理解析" class="sidebar-link">遇见面试 Vuex原理解析</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git使用技巧</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>react随笔</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="遇见面试-vuex原理解析"><a href="#遇见面试-vuex原理解析" class="header-anchor">#</a> 遇见面试 Vuex原理解析</h2> <p>流程：
+　1.在vue组件里面，通过dispatch来触发actions提交修改数据的操作。
+　　2.然后再通过actions的commit来触发mutations来修改数据。
+　　3.mutations接收到commit的请求，就会自动通过Mutate来修改state（数据中心里面的数据状态）里面的数据。
+　　4.最后由store触发每一个调用它的组件的更新</p> <p>Vuex的作用：项目数据状态的集中管理，复杂组件(如兄弟组件、远房亲戚组件)的数据通信问题。</p> <p>一、前言
+自从学习了VUE框架，其中必不可少的会用到vuex这个核心插件，而且在做项目的时候，基本都会使用，可能你会使用vuex状态管理，但是对vuex原理存在着或多或少的的疑惑或不解，这篇文章就针对vuex原理进行研究，希望能帮助到大家，如果有不准确的地方，大家多多指教。。。</p> <p>二、Vuex是什么？
+Vuex是专门为Vue服务，用于管理页面的数据状态、提供统一数据操作的生态系统，相当于数据库mongoDB，MySQL等，任何组件都可以存取仓库中的数据。其中vuex类似的 还是有Redux,Redux大多用于React,针对Redux后续在做补充，现在就让我们好好了解下Vuex到底是个啥东西？</p> <p>概念理解性（必读
+Vuex采用MVC模式中的Model层，规定所有的数据必须通过action—&gt;mutaion—&gt;state这个流程进行来改变状态的。再结合Vue的数据视图双向绑定实现页面的更新。统一页面状态管理，可以让复杂的组件交互变的简单清晰，同时在调试时也可以通过DEVtools去查看状态。</p> <p>在当前前端的spa模块化项目中不可避免的是某些变量需要在全局范围内引用，此时父子组件的传值，子父组件间的传值，兄弟组件间的传值成了我们需要解决的问题。虽然vue中提供了props（父传子）commit（子传父）兄弟间也可以用localstorage和sessionstorage。但是这种方式在项目开发中带来的问题比他解决的问题（难管理，难维护，代码复杂，安全性低）更多。vuex的诞生也是为了解决这些问题，从而大大提高我们vue项目的开发效率。</p> <p>抛出问题
+使用Vuex只需执行 Vue.use(Vuex)，并在Vue的配置中传入一个store对象的示例，store是如何实现注入的？
+state内部是如何实现支持模块配置和模块嵌套的？
+在执行dispatch触发action（commit同理）的时候，只需传入（type, payload），action执行函数中第一个参数store从哪里获取的？
+如何区分state是外部直接修改，还是通过mutation方法修改的？</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/blog/vue/vue.html" class="prev">
+        vue的基础概念
+      </a></span> <span class="next"><a href="/myBlog/blog/web/web.html">
+        跨域问题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.2a5cbbdb.js" defer></script><script src="/myBlog/assets/js/2.8bcff465.js" defer></script><script src="/myBlog/assets/js/15.0ce79cb7.js" defer></script>
+  </body>
+</html>
