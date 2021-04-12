@@ -1,21 +1,18 @@
 ---
-    home: true
-    # heroImage: /vue-logo.png
-    actionText: 快速上手 →
-    actionLink: /guide/
-    features:
-    - title: 简洁至上
-      details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-    - title: Vue驱动
-      details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-    - title: 高性能
-      details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+home: true
+# heroImage: /vue-logo.png
+actionText: 快速上手 →
+actionLink: /guide/
+features:
+  - title: 简洁至上
+    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+  - title: Vue驱动
+    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+  - title: 高性能
+    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
 ---
 
-
-
 ::: tip 前言
-
 
 如今的计算机行业发展愈来越快，<br/>
 在此建立这个博客记录平时会遇到的一些问题 <br/>
@@ -25,7 +22,7 @@
 那等在季节里的容颜如莲花的开落 <br/>
 东风不来，三月的柳絮不飞 <br/>
 
-你底心如小小寂寞的城 <br/>
+你心底如小小寂寞的城 <br/>
 恰若青石的街道向晚 <br/>
 而你依然在我身边 <br/>
 
@@ -38,11 +35,7 @@
 
 我不是归人，是个过客……<br/>
 
-
-  
-
 :::
-
 
 <script>
   
