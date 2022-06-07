@@ -22,6 +22,7 @@ module.exports = {
           { text: "vue", link: "/blog/vue/vue.md" },
           { text: "Web", link: "/blog/web/web.md" },
           { text: "React", link: "/blog/react/react1.md" },
+          { text: "javascript", link: "/blog/javascript/this.md" },
         ],
       },
 
@@ -33,7 +34,6 @@ module.exports = {
       {
         title: "vue",
         collapsable: true,
-
         children: [
           { title: "vue的基础概念", path: "/blog/vue/vue.md" },
           { title: "遇见面试 Vuex原理解析", path: "/blog/vue/vue1.md" },
@@ -63,6 +63,13 @@ module.exports = {
         collapsable: true,
         children: [
           { title: "setState同步异步分析", path: "/blog/react/react1.md" },
+        ],
+      },
+      {
+        title: "javascript",
+        collapsable: true,
+        children: [
+          { title: "this问题总结", path: "/blog/javascript/this.md" },
         ],
       },
     ],

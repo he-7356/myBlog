@@ -1,20 +1,6 @@
----
-title: "vue"
-date: 2019-11-14 16:41:12
-sidebar: true
-sidebarDepth: 5
-tags: 
-- vue
-categories:
-- 前端
-isShowComments: false
----
-<Boxx/>
-
-
 ## 序言
 
-<p>vue基础知识</p>
+vue基础知识
 
 - Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的渐进式框架。
 
